@@ -4,7 +4,7 @@
   </title>
 </head>
 <body>
-
+<form>
 <h1>Please Enter Your Detail For Our Dating Website!</h1>
   <fieldset>
     <legend>Your Face</legend>
@@ -32,12 +32,24 @@
 
   <fieldset>
     <legend>Your Indicators</legend>
+    <p>Height:Short<input type="range" min="0" max="100"></input>Tall</p>
+    <p>Salary:Poor<input type="range" min="0" max="100"></input>Rich</p>
   </fieldset>
 
   <fieldset>
     <legend>Your Contact Information</legend>
+    <p>E-mail: <input type="email"></input></p>
+    <p>Telephone: <input type="tel"></input></p>
+    <p>Address: <textarea></textarea></p>
+    <p>Method to contact you:
+      <input type="checkbox" value="E-mail"> E-Mail
+      <input type="checkbox" value="Whatsapp">Whatsapp
+      <input type="checkbox" value="chat">In-App Chat
+    </p>
+    <p>
   </fieldset>
-
+  <p><input type="Submit"></input></p>
+</form>
 </body>
 
 </html>

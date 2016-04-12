@@ -4,22 +4,22 @@
   </title>
 </head>
 <body>
-<form>
+<form method="GET" enctype="multipart/form-data">
 <h1>Please Enter Your Detail For Our Dating Website!</h1>
   <fieldset>
     <legend>Your Face</legend>
-    <p>Your Image:<input type="file"> </input></p>
+    <p>Your Image:<input type="file" name="avatar"> </input></p>
     <p>Image preview: <img id="preview"> </p>
   </fieldset>
 
   <fieldset>
     <legend>Your General Details</legend>
-    <p>Name: <input type= "text"> </input>
-    <p>Gender: <input type="radio">Male</input> <input type="radio">Female </input></p>
-    <p>Age: <input type="number"></input></p>
-    <p>Date Of Birth: <input type="date"> </input></p>
-    <p>Favourite Colour: <input type="color"></input></p>
-    <p>Which Country?: <select>
+    <p>Name: <input type= "text" name="name"> </input>
+    <p>Gender: <input type="radio" name="gender">Male</input> <input type="radio">Female </input></p>
+    <p>Age: <input type="number" name="age"></input></p>
+    <p>Date Of Birth: <input type="date" name="date"> </input></p>
+    <p>Favourite Colour: <input type="color" name="color"></input></p>
+    <p>Which Country?: <select name="country">
       <option>United Kingdom</option>
       <option>France</option>
       <option>Germany</option>
@@ -32,15 +32,15 @@
 
   <fieldset>
     <legend>Your Indicators</legend>
-    <p>Height:Short<input type="range" min="0" max="100"></input>Tall</p>
-    <p>Salary:Poor<input type="range" min="0" max="100"></input>Rich</p>
+    <p>Height:Short<input name="height" type="range" min="0" max="100"></input>Tall</p>
+    <p>Salary:Poor<input name="salary "type="range" min="0" max="100"></input>Rich</p>
   </fieldset>
 
   <fieldset>
     <legend>Your Contact Information</legend>
-    <p>E-mail: <input type="email"></input></p>
-    <p>Telephone: <input type="tel"></input></p>
-    <p>Address: <textarea></textarea></p>
+    <p>E-mail: <input name="email" type="email"></input></p>
+    <p>Telephone: <input name="tel" type="tel"></input></p>
+    <p>Address: <textarea name="address"></textarea></p>
     <p>Method to contact you:
       <input type="checkbox" value="E-mail"> E-Mail
       <input type="checkbox" value="Whatsapp">Whatsapp
@@ -48,7 +48,7 @@
     </p>
     <p>
   </fieldset>
-  <p><input type="Submit"></input></p>
+  <p><input type="Submit" value="Submit"></input></p>
 </form>
 </body>
 

@@ -4,22 +4,22 @@
   </title>
 </head>
 <body>
-<form method="GET" enctype="multipart/form-data">
+<form action="/~rossiter/cgi-bin/show_everything.php" method="GET" enctype="multipart/form-data">
 <h1>Please Enter Your Detail For Our Dating Website!</h1>
   <fieldset>
     <legend>Your Face</legend>
-    <p>Your Image:<input type="file" name="avatar"> </input></p>
+    <p>Your Image:<input type="file" name="avatar" required> </p>
     <p>Image preview: <img id="preview"> </p>
   </fieldset>
 
   <fieldset>
     <legend>Your General Details</legend>
-    <p>Name: <input type= "text" name="name"> </input>
-    <p>Gender: <input type="radio" name="gender">Male</input> <input type="radio">Female </input></p>
-    <p>Age: <input type="number" name="age"></input></p>
-    <p>Date Of Birth: <input type="date" name="date"> </input></p>
-    <p>Favourite Colour: <input type="color" name="color"></input></p>
-    <p>Which Country?: <select name="country">
+    <p><label for="name">Name: </label><input type= "text" id="name" name="name" required>
+    <p><label for="gender">Gender: </label><input type="radio" id="gender" name="gender">Male <input type="radio" required>Female </p>
+    <p><label for="age">Age: </label><input type="number" id="age" name="age" required></p>
+    <p><label for="date">Date Of Birth: </label><input type="date" id="date" name="date"> </p>
+    <p><label for="color">Favourite Colour: </label><input type="color" id="color" name="color"></p>
+    <p><label for="country">Which Country?: </label><select name="country" id="country" value="no selection">
       <option>United Kingdom</option>
       <option>France</option>
       <option>Germany</option>
@@ -32,14 +32,14 @@
 
   <fieldset>
     <legend>Your Indicators</legend>
-    <p>Height:Short<input name="height" type="range" min="0" max="100"></input>Tall</p>
-    <p>Salary:Poor<input name="salary "type="range" min="0" max="100"></input>Rich</p>
+    <p><label for="height">Height:Short<input name="height" type="range" min="0" max="100">Tall</p>
+    <p><label for="salary">Salary:Poor<input name="salary "type="range" min="0" max="100">Rich</p>
   </fieldset>
 
   <fieldset>
     <legend>Your Contact Information</legend>
-    <p>E-mail: <input name="email" type="email"></input></p>
-    <p>Telephone: <input name="tel" type="tel"></input></p>
+    <p><label for="country">E-mail: <input name="email" type="email" required></p>
+    <p>Telephone: <input name="tel" type="tel"></p>
     <p>Address: <textarea name="address"></textarea></p>
     <p>Method to contact you:
       <input type="checkbox" value="E-mail"> E-Mail
@@ -48,7 +48,7 @@
     </p>
     <p>
   </fieldset>
-  <p><input type="Submit" value="Submit"></input></p>
+  <p><input type="Submit" value="Submit"></p>
 </form>
 </body>
 

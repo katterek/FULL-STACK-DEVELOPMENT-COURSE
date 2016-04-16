@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Katarzyna Terek - Assignment 1 - HTML, CSS, JAVASCRIPT - Part 3
+  </title>
+  <style>
+  body{
+    font-family: Helvetica; sans-serif;
+  }
+  h1{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+form{
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  width:720px;
+}
+  fieldset{
+  margin-right: auto;
+  margin-left: auto;
+  background:lightyellow;
+  border:10px solid yellow;
+  margin-bottom:10px;
+  width:720px;
+  }
+  label:hover { font-size:40px }
+  input:hover { font-size:40px }
+  label{
+    width:180px;
+    display:inline-block;
+    text-align:right;
+      }
+  .checkbox label{
+    width:auto;
+  }
+  textarea{
+    width:360px;
+    height:50px;
+  }
+  .right{
+    background:purple;
+  }
+  .range{
+    width:100px;
+    text-align:center;
+    color: white;
+    font-weight: bold;
+  }
+.left{
+  background:#b32400;
+}
+
+
+  </style>
+
+</head>
+<body>
+  <h1>Please Enter Your Detail For Our Dating Website!</h1>
+<form method="get" enctype="multipart/form-data" action="/~rossiter/cgi-bin/show_everything.php">
+  <fieldset>
+    <legend>Your Face</legend>
+    <p><label for="avatar">Your Image:</label><input type="file" name="avatar" id="avatar" required> </p>
+    <p><label for="preview">Image preview: </label><img id="preview"> </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Your General Details</legend>
+    <p><label for="name">Name: </label><input type= "text" id="name" name="name" required>
+    <p><label for="gender">Gender: </label><input type="radio" id="gender" name="gender">Male <input type="radio" required>Female </p>
+    <p><label for="age">Age: </label><input type="number" id="age" name="age" required></p>
+    <p><label for="date">Date Of Birth: </label><input type="date" id="date" name="date"> </p>
+    <p><label for="color">Favourite Colour: </label><input type="color" id="color" name="color"></p>
+    <p><label for="country">Which Country?: </label><select name="country" id="country" value="no selection">
+      <option>United Kingdom</option>
+      <option>France</option>
+      <option>Germany</option>
+      <option>Italy</option>
+      <option>Spain</option>
+      <option>Norway</option>
+    </select>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Your Indicators</legend>
+    <p><label for="height">Height: </label><label for="height" class="range left">Short </label><input name="height" id="height" type="range" min="0" max="100" class="range"><label for="height" class="range right">Tall</label></p>
+    <p><label for="salary">Salary: </label><label for="salary" class="range left">Poor </label><input name="salary" id="salary" type="range" min="0" max="100" class="range"><label for="salary" class="range right" >Rich</label></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Your Contact Information</legend>
+    <p><label for="email">E-mail:  </label><input name="email" id="email" type="email" required></p>
+    <p><label for="tel">Telephone:  </label><input name="tel" id="tel" type="tel"></p>
+    <p><label for="address">Address:  </label><textarea name="address" id="address" type="address"></textarea></p>
+    <p><label for="checkbox">Method to contact you:</label>
+      <input type="checkbox" value="E-mail"> E-Mail
+      <input type="checkbox" value="Whatsapp">Whatsapp
+      <input type="checkbox" value="chat">In-App Chat
+    </p>
+    <p>
+  </fieldset>
+  <p><input type="Submit" value="Submit" id=submit></p>
+</form>
+
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
+
+</html>
